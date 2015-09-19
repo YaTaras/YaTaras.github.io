@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text editor</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+  <div id="mainContainer">
+  <!-- Options -->
+    <div id="options">
+      <input type="button" value="B" id="boldBtn" title="Bold"/>
+      <input type="button" value="I" id="italicBtn" title="Italic"/>
+      <input type="button" value="U" id="underlineBtn" title="Underline"/>
+      <select id="kegel">
+        <option value="10" id="small">Small</option>
+        <option value="12" id="normal" selected="selected">Normal</option>
+        <option value="18" id="large">Large</option>
+        <option value="24" id="huge">Huge</option>
+      </select>
+      <input type="button" value=" " id="alignLeftBtn" title="Align Left"/>
+      <input type="button" value=" " id="alignCenterBtn" title="Align Center"/>
+      <input type="button" value=" " id="alignJustifyBtn" title="Align Justify"/>
+      <input type="button" value=" " id="bulletListBtn" title="Bulleted List"/>
+      <input type="button" value=" " id="saveBtn" title="Save"/>
+      <input type="button" value=' ' id="undoBtn" title="Undo"/>
+      <input type="button" value=' ' id="redoBtn" title="Redo"/>
+      <br />
+    </div> 
+    <!-- Text area -->
+    <div class="textArea" id="editableArea" contentEditable="true"><br></div>
+  </div>
+<script src="js/script.js"></script>
+</body>
+</html>
